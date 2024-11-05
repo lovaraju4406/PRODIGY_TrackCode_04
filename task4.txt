@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page Layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #008000; /* Green color */
+            color: #fff;
+        }
+
+        header {
+            width: 100%;
+            background-color: #000; /* Black top section */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        /* Profile Image */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #fff;
+        }
+
+        /* About Me Section */
+        .about-me, .projects {
+            width: 80%;
+            max-width: 800px;
+            padding: 30px;
+            background-color: #006400; /* Darker green for content boxes */
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-me h2, .projects h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-me p, .projects p {
+            line-height: 1.6;
+        }
+
+        /* Projects Section */
+        .projects ul {
+            list-style-type: none;
+        }
+
+        .projects li {
+            margin: 10px 0;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #32CD32; /* Lime green */
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #228B22;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>A Web Developer passionate about building interactive applications</p>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    </header>
+
+    <!-- About Me Section -->
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm a web developer with a strong background in designing and developing high-quality, responsive websites. I have a passion for creating efficient and user-friendly web applications using the latest technologies.
+        </p>
+        <p>
+            <strong>Education:</strong> Bachelor’s in Computer Science <br>
+            <strong>Experience:</strong> Over 3 years of experience in web development, specializing in JavaScript, HTML, CSS, and React.
+        </p>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> E-commerce Website - Built a fully-functional e-commerce platform using React and Node.js.</li>
+            <li><strong>Project 2:</strong> Personal Blog - Developed a blog with dynamic content features and SEO optimization.</li>
+            <li><strong>Project 3:</strong> Task Management App - Created a to-do list application with task prioritization and reminders.</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <button class="contact-btn" onclick="window.location.href='mailto:your-email@example.com'">Contact Me</button>
+
+</body>
+</html>
